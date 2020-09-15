@@ -1,38 +1,133 @@
-.App {
-  text-align: center;
+
+.fade-enter{
+  opacity: 0.01;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.fade-enter-active {
+  opacity: 1;
+  transition: opacity 1000ms ease-in;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.fade-exit {
+  opacity: 1;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+.fade-exit-active {
+  opacity: 0.01;
+  transition: opacity 1000ms ease-in;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #FDBF00;
+  border-color: #FDBF00;
+}
+
+.btn-primary:hover {
+  color: #fff;
+  background-color: #FF8856;
+  border-color: #FF8856;
+}
+
+.btn-primary a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.btn-primary:hover a{
+  color: #fff;
+  text-decoration: none;
+}
+
+.card-title {
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  display: flex;
+  margin-top: .75rem;
+  font-size: 1.25rem;
+  font-weight: 600;
 }
 
-.App-link {
-  color: #61dafb;
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.1), 0 3px 8px 0 rgba(0,0,0,0.1);
+  border: none;
+}
+
+.logo {
+  max-width: 160px;
+}
+
+.nav-link {
+  color: #a6ca51;
+}
+
+.nav-link:hover {
+  color: #5CA288;
+}
+
+a {
+  color:  #a6ca51;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #5CA288;
+  text-decoration: none;
+}
+
+.navbar {
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.1);
+}
+
+h3 {
+  margin-bottom: 2rem;
+}
+
+#home {
+  height: 100vh;
+  background-size: cover;
+  
+}
+
+.hero {
+  margin-top: 8%;
+}
+
+.rlist {
+  display:flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.recipes-list{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#hero{
+  position: absolute;
+    top: 8%;
+    z-index: -1;
+    left: 50%;
+}
+
+button{
+  color: #000000;
+}
+
+.edit-btns {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+#spacer{
+  margin-bottom: 2rem;
 }
