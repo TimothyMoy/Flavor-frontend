@@ -1,14 +1,18 @@
-import React from 'react';
+import React, { Component } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
-import Home from './Components/Home'
+import Routes from './Config/Routes';
+import AppNavbar from './Components/Navbar';
 
-function App() {
-  return (
-    <div className="App">
-    <Home />
-    </div>
-  );
+class App extends Component {
+  render() {
+    return (
+      <div className="App">
+        <AppNavbar />
+        { Routes }
+      </div>
+    );
+  }
 }
 
 export default App;
