@@ -14,12 +14,12 @@ class RecipesList extends Component {
               <Row>
               {/* {recipes.map(({_id,name, picture, subtitle}) => ( */}
                 <CSSTransition timeout={500} classNames="fade">
-                      <Col xs="3">
+                      <Col>
                       <Card>
-                      <CardTitle>name</CardTitle>
-                      <CardImg top width="10%" src="{`${picture}`} "alt="Food image cap" />
+                      <CardTitle>Famous Blueberry Pancakes</CardTitle>
+                      <CardImg top width="10%" src="https://images.unsplash.com/photo-1587650282240-2c99248c1f3a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=975&q=80"alt="Food image cap" />
                       <CardBody>
-                      <CardText> subtitle</CardText>
+                      <CardText>The most fabulous pancakes! Serve them with butter and brown sugar.</CardText>
                       <Button className="btn-primary"><Link to="/recipe">View Recipe</Link></Button>
                       </CardBody>
                       </Card>
