@@ -2,8 +2,20 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import { Container, ListGroup, Col, Button, Row, Card, CardTitle, CardImg, CardBody, CardText } from 'reactstrap';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
+import RecipeModel from '../Models/Recipe';
 
 class RecipesList extends Component {
+  state = {
+    recipes: []
+  }
+  componentDidMount() {
+    RecipeModel.getAllRecipes()
+      .then((result) => {
+        this.setState({ recipes: result})
+    })
+    .catch((err) => console.log(err))
+  }
+
   render(){
     return(
       <Container>
