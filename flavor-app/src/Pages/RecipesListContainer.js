@@ -1,15 +1,16 @@
-import React from 'react';
+import React , { Component} from 'react';
 import RecipesList from '../Components/RecipesList';
 import RecipeModel from '../Models/Recipe';
 
-class RecipesListContainer extends React.Component {
+class RecipesListContainer extends Component {
   state = {
-    recipes: [],
+    recipe: [],
   };
 
   componentDidMount() {
     RecipeModel.getAllRecipes()
       .then((result) => {
+        console.log(result)
         this.setState({recipes: result});
       })
       .catch((err) => console.log(err))
@@ -17,7 +18,7 @@ class RecipesListContainer extends React.Component {
 
   render() {
     return (
-      <RecipesList></RecipesList>
+      <RecipesList recipe={this.state.recipe} />
     )
   }
 }

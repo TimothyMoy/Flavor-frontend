@@ -1,9 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Container, ListGroup, Col, Button, Row, Card, CardTitle, CardImg, CardBody, CardText } from 'reactstrap';
-import { CSSTransition, TransitionGroup } from 'react-transition-group';
+import { Col, Button, Card, CardTitle, CardImg, CardBody, CardText } from 'reactstrap';
+import { CSSTransition } from 'react-transition-group';
 
 function Recipe (props) {
+  // const { recipe, list } = props;
   return(
     <CSSTransition timeout={500} classNames="fade">
       <Col>
