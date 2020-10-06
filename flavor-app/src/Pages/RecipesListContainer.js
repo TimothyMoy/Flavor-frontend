@@ -4,7 +4,7 @@ import RecipeModel from '../Models/Recipe';
 
 class RecipesListContainer extends Component {
   state = {
-    recipe: [],
+    recipes: [],
   };
 
   componentDidMount() {
@@ -18,7 +18,7 @@ class RecipesListContainer extends Component {
 
   render() {
     return (
-      <RecipesList recipe={this.state.recipe} />
+      <RecipesList recipes={this.state.recipes} />
     )
   }
 }

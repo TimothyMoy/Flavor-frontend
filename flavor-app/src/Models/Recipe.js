@@ -11,6 +11,17 @@ class RecipeModel {
       .then((response) => response.json())
   }
 
+  static createRecipe = (recipe) => {
+    return fetch(url, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'authorization': localStorage.getItem('token'),
+      },
+      body: JSON.stringify(recipe)
+    })
+      .then((response) => response.json())
+  }
 }
 
 export default RecipeModel;

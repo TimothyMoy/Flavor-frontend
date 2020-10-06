@@ -6,7 +6,7 @@ import Recipe from './Recipe';
 
 function RecipesList(props) {
   console.log(props)
-  const recipesList = props.recipe.map((recipeObj) => {
+  const recipesList = props.recipes.map((recipeObj) => {
     console.log(recipeObj)
     return (
       <Recipe recipe={recipeObj} list={true} />

@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import RecipeModel from '../Models/Recipe';
-import ReactModel from '../Models/Recipe';
 
 class NewRecipeContainer extends Component {
   state= {
