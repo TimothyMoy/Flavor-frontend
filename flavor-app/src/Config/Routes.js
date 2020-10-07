@@ -10,7 +10,7 @@ export default (
   <Switch>
     <Route exact path='/' component={ Home } />
     <Route exact path='/recipes' component={ RecipesListContainer } />
-    <Route exact path='/recipes/:id' component={ RecipeContainer } />
     <Route path='/recipes/new' component={ NewRecipeContainer } />
+    <Route exact path='/recipes/:id' component={ RecipeContainer } />
   </Switch>
 )
