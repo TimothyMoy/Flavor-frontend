@@ -24,7 +24,7 @@ class AppNavbar extends Component {
   render(){
     return(
       <div>
-        <Navbar>
+        <Navbar color="faded" light>
           <Container>
             <NavbarBrand href="/"><img className="logo" src="https://lh3.google.com/u/0/d/1mpil7xzTYG52LrtVgvuGn7bwrfrlTgXu=w1440-h821-iv1" alt="brandlogo"/>
             </NavbarBrand>
