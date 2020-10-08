@@ -1,4 +1,4 @@
-const url = `http://localhost:4000/api/v1/recipes`
+const url = `https://flavor-backend.herokuapp.com/api/v1/recipes`
 
 class RecipeModel {
   static getAllRecipes = () => {
