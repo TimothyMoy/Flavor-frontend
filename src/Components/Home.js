@@ -3,8 +3,10 @@ import { Container, Col, Button, Row } from 'reactstrap';
 
 function Home () {
   return(
-    <Container className="hero">
-      <Row>
+    <Container>
+      <div className="hero">
+      </div>
+      <Row className="home">
         <Col xs="6">
           <h1>
             Create and Save your favorite recipes.

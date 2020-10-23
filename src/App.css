@@ -93,10 +93,21 @@ h3 {
 #home {
   height: 100vh;
   background-size: cover;
-  
 }
 
 .hero {
+  background-size: contain;
+  height: 60%;
+  width: 60%;
+  position: fixed;
+  top: 14%;
+  left: 50%;
+  background-repeat: no-repeat;
+  transform: scaleX(-1);
+  background-image: url('https://www.chefmarcsmealprep.com/wp-content/uploads/2018/03/kisspng-health-food-healthy-diet-meal-delivery-service-weight-loss-5b649d89de2764.36415564153332058591.png');
+}
+
+.home {
   margin-top: 8%;
 }
 
