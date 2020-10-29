@@ -24,15 +24,18 @@ class AppNavbar extends Component {
   render(){
     return(
       <div>
-        <Navbar color="faded" light>
+        <Navbar color="faded" light expand="md">
           <Container>
             <NavbarBrand href="/"><img className="logo" src="https://lh3.google.com/u/0/d/1mpil7xzTYG52LrtVgvuGn7bwrfrlTgXu=w1440-h821-iv1" alt="brandlogo"/>
             </NavbarBrand>
-            <NavbarToggler onClick={this.toggle} />
+            <NavbarToggler onClick={this.toggle} navbar/>
             <Collapse isOpen={this.state.isOpen} navbar>
-              <Nav className="ml-auto" navbar>
+              <Nav className="mr-auto" navbar>
               <NavItem>
                 <NavLink href="/recipes">Recipes</NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink href="/profile">Login</NavLink>
               </NavItem>
               </Nav>
             </Collapse>

@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import { Container, Row, Col, Button } from 'reactstrap';
+import RecipesList from '../Components/RecipesList';
+import Recipe from './Recipe'
 
 class Profile extends Component {
   render(){
@@ -27,6 +29,7 @@ class Profile extends Component {
           <Col xs="8">
             <Row className="rlist">
               <h2>Your Recipes</h2>
+             
             </Row>
           </Col>
         </Row>
